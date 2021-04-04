@@ -1,0 +1,142 @@
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	font-family: 'Roboto'
+	outline: none
+
+body
+	background: #F7FAFC
+
+a
+	cursor: pointer
+	text-decoration: none
+	outline: none
+
+	&:visited
+		outline: none
+		border: none
+
+	&:active
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+h1
+	font-style: normal
+	font-weight: normal
+	font-size: 45px
+	line-height: 54px
+	color: #342F2F
+	text-align: center
+
+.main
+	padding-top: 20px
+	padding-bottom: 20px
+
+.wrapper
+	width: 93.75%
+	max-width: 1200px
+	margin: 0 auto
+
+.search_line
+	margin: 0 auto
+	display: flex
+	align-items: center
+	width: 100%
+	max-width: 700px
+	flex-wrap: wrap
+	justify-content: center
+
+.search_text
+	height: 60px
+	padding: 0 20px
+	width: 100%
+	max-width: 500px
+	min-width: 300px
+	box-shadow: 0px 6px 10px rgba(45, 45, 45, 0.1)
+	border: 1px solid #39896b
+	font-size: 18px
+	margin-top: 10px
+
+.search_but
+	width: 200px
+	height: 60px
+	background: #EF3033
+	font-weight: bold
+	font-size: 18px
+	line-height: 60px
+	text-transform: uppercase
+	color: #FFFFFF
+	text-align: center
+	margin-top: 10px
+
+	&:hover
+		background: #FF4043
+
+	&:active
+		background: #DF0004
+
+.books_list
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+
+	.book_item
+		margin-top: 20px
+		display: flex
+		max-width: 500px
+		min-width: 300px
+		width: 47%
+		background: #FEFEFE
+		border: 1px solid #DDDDDD
+		box-sizing: border-box
+		box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.05)
+		border-radius: 10px
+		margin-left: 10px
+		margin-right: 10px
+		min-height: 210px
+		padding-right: 5px
+		
+
+		.img_box
+			height: 100%
+			width: 128px
+			margin-right: 20px
+
+			.book_picture
+				width: 100%
+				height: auto
+
+		.book_item_text
+			width: calc(100% - 148px)
+			margin-top: 20px
+			padding-bottom: 20px
+
+			p
+				margin-bottom: 10px
+
+				.book_bold
+					font-weight: 700
+
+			.book_link
+				background: #4C0FF9
+				color: #FFFFFF
+				width: 90px
+				height: 30px
+				line-height: 30px
+				display: block
+				border-radius: 5px
+				text-align: center
+
+				&:hover
+					background: #9362FF
+			
+
+	
+
+
+
+@media (max-width: 767px)
+	
+	.books_list .book_item
+		width: 100%
+
